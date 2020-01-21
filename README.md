@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Use the project structure outlined [here](https://medium.com/@Charles_Stover/optimal-file-structure-for-react-applications-f3e35ad0a145).
 
 ## Available Scripts
 
