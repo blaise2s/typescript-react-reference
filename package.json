@@ -8,6 +8,8 @@
     "typescript": "^3.7.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
@@ -15,14 +17,18 @@
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "husky": "^4.0.10",
     "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "pretty-quick",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,5 +44,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaise2s/typescript-react-reference.git"
+  },
+  "author": "Blaise Schaeffer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blaise2s/typescript-react-reference/issues"
+  },
+  "homepage": "https://github.com/blaise2s/typescript-react-reference#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
