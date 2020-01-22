@@ -1,3 +1,5 @@
+// src/components/app/app.test.tsx
+
 import React from "react";
 import { render } from "@testing-library/react";
 import App from "./app";

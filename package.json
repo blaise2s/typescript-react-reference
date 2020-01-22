@@ -10,6 +10,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/addon-actions": "^5.3.8",
+    "@storybook/addon-links": "^5.3.8",
+    "@storybook/addons": "^5.3.8",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
@@ -28,7 +33,9 @@
     "eject": "react-scripts eject",
     "prettier": "pretty-quick",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,3 +1,5 @@
+// prettier.config.js
+
 /**
  * https://prettier.io/docs/en/options.html
  */
