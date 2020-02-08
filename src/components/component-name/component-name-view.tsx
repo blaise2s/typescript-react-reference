@@ -8,11 +8,7 @@ export type ComponentNameProps = {
 };
 
 const ComponentName: React.FC<ComponentNameProps> = ({ name }) => {
-  return (
-    <h1 className="hello">
-      Hello, <span className="name">{name}</span>!
-    </h1>
-  );
+  return <h1>Hello, {name}!</h1>;
 };
 
 export default ComponentName;
